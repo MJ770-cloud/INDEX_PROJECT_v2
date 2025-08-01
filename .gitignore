@@ -1,0 +1,22 @@
+﻿# Exclude large video/media files
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.mkv
+TCE-MEDIA/
+*.zip
+*.rar
+
+# Windows system files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Log files
+*.log

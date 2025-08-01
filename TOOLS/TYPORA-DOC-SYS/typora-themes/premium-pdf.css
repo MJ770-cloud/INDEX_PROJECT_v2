@@ -1,0 +1,225 @@
+/* premium_pdf_theme_20250728_2006.css */
+
+/* PREMIUM PDF THEME FOR TYPORA-PANDOC EXPORT */
+/* Created: July 28, 2025 - 20:06 Pacific */
+/* Purpose: Chrome-quality PDF rendering with perfect image handling */
+
+/* === PAGE LAYOUT === */
+@page {
+    margin: 0.75in;
+    size: letter;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #333;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* === HEADINGS === */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 24pt;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 8pt;
+}
+
+h2 {
+    font-size: 18pt;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 4pt;
+}
+
+h3 {
+    font-size: 14pt;
+    color: #34495e;
+}
+
+/* === IMAGES - OPTIMIZED FOR SCREENSHOTS === */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16pt auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    page-break-inside: avoid;
+}
+
+/* Special styling for different image types */
+img[alt*="Screenshot"], img[alt*="Chrome"] {
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+img[alt*="Excel"], img[alt*="Chart"] {
+    border: 2px solid #27ae60;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+}
+
+img[alt*="GUI"], img[alt*="Interface"] {
+    border: 2px solid #e74c3c;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+/* === FIGURE CAPTIONS === */
+p img + em, figcaption {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 9pt;
+    color: #7f8c8d;
+    margin-top: -12pt;
+    margin-bottom: 16pt;
+}
+
+/* === TABLES === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+}
+
+th, td {
+    border: 1px solid #bdc3c7;
+    padding: 8pt 12pt;
+    text-align: left;
+}
+
+th {
+    background-color: #ecf0f1;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* === CODE BLOCKS === */
+pre, code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+pre {
+    padding: 12pt;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 9pt;
+    line-height: 1.4;
+    page-break-inside: avoid;
+}
+
+code {
+    padding: 2pt 4pt;
+    border-radius: 2px;
+    font-size: 90%;
+}
+
+/* === LISTS === */
+ul, ol {
+    margin: 12pt 0;
+    padding-left: 24pt;
+}
+
+li {
+    margin: 4pt 0;
+}
+
+/* === BLOCKQUOTES === */
+blockquote {
+    border-left: 4px solid #3498db;
+    margin: 16pt 0;
+    padding: 8pt 16pt;
+    background-color: #f8f9fa;
+    font-style: italic;
+}
+
+/* === TABLE OF CONTENTS === */
+.toc {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 16pt;
+    margin: 24pt 0;
+    page-break-inside: avoid;
+}
+
+.toc h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: none;
+}
+
+/* === PAGE BREAKS === */
+.page-break {
+    page-break-before: always;
+}
+
+/* === PRINT OPTIMIZATIONS === */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    img {
+        max-height: 6in;
+        object-fit: contain;
+    }
+}
+
+/* === PROFESSIONAL SPACING === */
+p {
+    margin: 8pt 0;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #bdc3c7;
+    margin: 24pt 0;
+}
+
+/* === METADATA STYLING === */
+.title {
+    font-size: 28pt;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 8pt;
+    font-weight: 700;
+}
+
+.author {
+    text-align: center;
+    font-size: 12pt;
+    color: #7f8c8d;
+    margin-bottom: 4pt;
+}
+
+.date {
+    text-align: center;
+    font-size: 10pt;
+    color: #95a5a6;
+    margin-bottom: 24pt;
+}
